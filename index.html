@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel=stylesheet />
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <!-- <script src="d3.min.js"></script> -->
+
+    <title>Open Banking App - concept</title>
+</head>
+<body>
+
+    <section id="auth" class="begining">
+        <div class="wrap">
+            <!-- <div class="ball"></div>
+            <div class="ball1"></div> -->
+            <div class="feature-title">
+                <h1>Menage your personal finance</h1>
+                <p>Keeping your budget balanced can help you stay on track, and also reduce your stress when it comes to your financial health.</p>
+            </div>
+            <div class="marvel-device iphone8">
+                <div class="top-bar"></div>
+                <div class="sleep"></div>
+                <div class="volume"></div>
+                <div class="camera"></div>
+                <div class="sensor"></div>
+                <div class="speaker"></div>
+                <div class="home"></div>
+                <div class="bottom-bar"></div>  
+                <div id="screen" class="slideShow screen fade">
+                    <div class="finance">
+                        <img src="images/finance.png" alt="finance-img"/>
+                    </div>
+                    <div class="get-started">
+                        <h6>Let's get started</h6>
+                        <p>Manage all your finance in one place</p>
+                    </div>
+                    <button class="create-account" type="button">Create Account</button>
+                    <a class="login" href="">Login an Account</a>
+
+
+                </div>
+
+                <div id="screen" class="slideShow screen-registration fade">
+                    <div class="registration">
+                        <h6>Registration</h6>
+                        <p>Enter your mobile number, we will send you OTP to verify</p>
+                        <form class="phone-input" action="">
+                            <input class="phone" type="text" id="fname" name="PhoneNumber" placeholder="(+359) 000 000 000">
+  
+                            <input class="continue" type="submit" value="Continue">
+                        </form>
+                    </div>
+                    
+
+                </div>
+
+                <div id="screen" class="slideShow screen-verification fade">
+                    <div class="verification">
+                        <h6>Verification</h6>
+                        <p>Enter 4 digit number that sent to (+359) 000 000 000</p>
+                        <form class="digit-input" action="">
+                            <div class="digits">
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                            </div>
+                            <input class="continue" type="submit" value="Continue">
+                        </form>
+                        <span class="re-send">Re-send the code in 0:30</span>
+                    </div>
+                </div>
+
+                <div id="screen" class="slideShow screen-fingerprint fade">
+                    <div class="fingerprint">
+                        <h6>Fingerprint</h6>
+                        <p>To add your fingerprint, lift and rest your finger at home button repeatedly <span style="font-weight: bold;">(optional)</span>.</p>
+                    </div>
+                    <!-- <div class="fingerprint-img">
+                        <img src="./images/fingerprint-svgrepo-com.svg" alt="fingerprint" />
+                    </div> -->
+                    <div class="ripple1">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="OBJECTS" viewBox="0 0 103.051 102">
+                            <defs>
+                                <pattern id="gif" height="100%" width="100%" patternContentUnits="objectBoundingBox">
+                                 <image height="1" width="1" preserveAspectRatio="none" xlink:href="https://media.giphy.com/media/dAWZiSMbMvObDWP3aA/giphy.gif"></image>
+                             </pattern>
+                           </defs>
+                           <g class="prints" stroke="#fff">
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M13.1 52.786s4.367-1.106 4.725-10.829 4.841-22.651 9.107-25.389" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M28.984 14.686S40.423-.54 66.58 4.026" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M75.173 11.689a43.984 43.984 0 00-19.836-3.077c-9.059.522-17.207 3.674-24.463 12.261-8.447 9.995-8.456 22.215-7.789 31.5.457 6.372-7.166 9.01-9.363 9.326" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M82.387 84.332a4.85 4.85 0 01-1.987-3.344c-.423-2.428 1.032-9.714 2.486-13.691s3.346-12.64 3.427-16.456a32.465 32.465 0 00-.624-6.964" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M75.383 18.957S86.59 26.26 88.491 39" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M72.031 17s-19.474-9.522-35.118 4.62" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M34.832 24.532s-2.749 3.991-2.5 4.091" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M30.531 32.956s-2.172 9.127-2.224 13.506a87 87 0 01-.422 10.347c-.352 1.971-2.323 7.827-11.826 11.129" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M16.845 74.418s6.676-3.673 8.717-5.643" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M30.531 62.637a10.878 10.878 0 003.454-6.445c.751-4.334-.281-8.932 0-12.217s1.231-15.111 11.08-20.836 21.055-3.191 25.636 0 10.717 8.937 11.236 18.045a58 58 0 01-2.214 17.947" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M19.692 81.044s12.7-9.13 16.077-15.873 4.692-9.9 4.223-14.33-.351-12.689 2.722-17.885a17.446 17.446 0 0110.815-7.673" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M58.243 24.847a11.342 11.342 0 015.484.855" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M67.241 27.317s6.887 3.331 7.932 10.463 1.046 13.234-.643 18.02-6.224 20.672-7.289 23.851S63.976 97.159 68.83 99.1" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M78.178 65.209s-4.211 14.242-4.68 18.56-1.06 7.231 1.675 9.854" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M60.167 102.915s-2.767-3.358-2.884-10.887a31.772 31.772 0 013.732-14.923c.845-1.689 6.57-15.079 7.884-20.913s1.838-14.646.45-19.2-5.143-7-12.182-6.34S48.392 34.4 47.148 37.5s.165 9.87-.492 15.955S43 68.1 34.832 75.885 22.953 86.63 22.953 86.63" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M26.36 91.114s9.2-8.1 14.1-12.883 11.32-15.674 11.949-22.337-.887-11.87.117-14.71 3.046-5.468 6.049-5 5.529 1.5 5.768 7.977-3.516 17.926-3.516 17.926c-1.22 2.441-9.722 22.525-10.164 26.373" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M51.884 104.791s-2.1-6.2-1.974-9.762" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M40.274 100.944a20.083 20.083 0 010-8.916c1.1-4.97 4.412-8.916 6.335-11.638s7.537-10.418 9.658-19.522" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M58.34 43.109s.524 7.441-.891 13.068" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           </g>
+                           <g class="draw" stroke="url(#gif)">
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M13.1 52.786s4.367-1.106 4.725-10.829 4.841-22.651 9.107-25.389" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M28.984 14.686S40.423-.54 66.58 4.026" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M75.173 11.689a43.984 43.984 0 00-19.836-3.077c-9.059.522-17.207 3.674-24.463 12.261-8.447 9.995-8.456 22.215-7.789 31.5.457 6.372-7.166 9.01-9.363 9.326" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M82.387 84.332a4.85 4.85 0 01-1.987-3.344c-.423-2.428 1.032-9.714 2.486-13.691s3.346-12.64 3.427-16.456a32.465 32.465 0 00-.624-6.964" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M75.383 18.957S86.59 26.26 88.491 39" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M72.031 17s-19.474-9.522-35.118 4.62" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M34.832 24.532s-2.749 3.991-2.5 4.091" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M30.531 32.956s-2.172 9.127-2.224 13.506a87 87 0 01-.422 10.347c-.352 1.971-2.323 7.827-11.826 11.129" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M16.845 74.418s6.676-3.673 8.717-5.643" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M30.531 62.637a10.878 10.878 0 003.454-6.445c.751-4.334-.281-8.932 0-12.217s1.231-15.111 11.08-20.836 21.055-3.191 25.636 0 10.717 8.937 11.236 18.045a58 58 0 01-2.214 17.947" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M19.692 81.044s12.7-9.13 16.077-15.873 4.692-9.9 4.223-14.33-.351-12.689 2.722-17.885a17.446 17.446 0 0110.815-7.673" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M58.243 24.847a11.342 11.342 0 015.484.855" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M67.241 27.317s6.887 3.331 7.932 10.463 1.046 13.234-.643 18.02-6.224 20.672-7.289 23.851S63.976 97.159 68.83 99.1" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M78.178 65.209s-4.211 14.242-4.68 18.56-1.06 7.231 1.675 9.854" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M60.167 102.915s-2.767-3.358-2.884-10.887a31.772 31.772 0 013.732-14.923c.845-1.689 6.57-15.079 7.884-20.913s1.838-14.646.45-19.2-5.143-7-12.182-6.34S48.392 34.4 47.148 37.5s.165 9.87-.492 15.955S43 68.1 34.832 75.885 22.953 86.63 22.953 86.63" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M26.36 91.114s9.2-8.1 14.1-12.883 11.32-15.674 11.949-22.337-.887-11.87.117-14.71 3.046-5.468 6.049-5 5.529 1.5 5.768 7.977-3.516 17.926-3.516 17.926c-1.22 2.441-9.722 22.525-10.164 26.373" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M51.884 104.791s-2.1-6.2-1.974-9.762" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M40.274 100.944a20.083 20.083 0 010-8.916c1.1-4.97 4.412-8.916 6.335-11.638s7.537-10.418 9.658-19.522" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M58.34 43.109s.524 7.441-.891 13.068" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                           </g>
+                         </svg>
+                    </div>
+                    <div class="ripple2"></div>
+
+                    <button class="continue-btn" type="button">Continue</button>
+                    <span class="skip">Skip this step -></span>
+                </div>
+
+                <div id="screen" class="slideShow screen-id-card fade">
+                    <div class="feature-account4">
+                        <h6>Verification</h6>
+                        <img src="./images/dots.svg" alt="">
+                    </div>
+                    
+                    <div class="id-card">
+                        <img src="./images/id-card.svg" alt="id-card">
+                        <h6>Scan Document</h6>
+                        <p><span style="font-weight: bold;">Do: </span>Your entire ID is whitin the frame</p>
+                        <p><span style="font-weight: bold;">Don't: </span>Use scan or photocopy</p>
+                    </div>
+                    <button class="lets-start-btn" type="button">Let's start</button>
+                </div>
+
+                <div id="screen" class="slideShow screen-id-card fade">
+                    <div class="feature-account3">
+                        <h6>Verification</h6>
+                        <img src="./images/dots.svg" alt="">
+                    </div>
+                    
+                    <div class="selfie">
+                        <img src="./images/selfie.svg" alt="id-card">
+                        <h6>Is this clear enought?</h6>
+                        <p>Make sure your face is clear enought and the photo is not blurry</p>
+                    </div>
+                    <button class="use-photo-btn" type="button">Yes use this one</button>
+                    <button class="retake-btn" type="button">Retake photo</button>
+                </div>
+
+                <div id="screen" class="slideShow screen-submit-all fade">
+                    <h6>Verification</h6>
+                    <div class="submit-all-title">
+                        <img class="id-card-img" src="./images/id-card.svg" alt="">
+                        <p>Take a passport or ID to check your information</p>
+                        <span>Passport scan</span>
+                        <p class="uploaded">Uploaded <img class="check-img" src="./images/check-tick-svgrepo-com.svg" alt="check"></p>
+                    </div>
+                    
+                    <div class="selfie1">
+                        <img class="selfie-img" src="./images/selfie.svg" alt="id-card">
+                        <p>Selfie with your camera to verify you identity</p>
+                        <span>Selfie photo</span>
+                        <p class="uploaded">Uploaded <img class="check-img" src="./images/check-tick-svgrepo-com.svg" alt="check"></p>
+                    </div>
+                    <button class="submit-all-btn" type="button">Sumbit all</button>
+                </div>                   
+            </div>  
+        </div>
+    </section>  
+
+    <section class="select-card">
+        <div class="just-screen" style="margin-top: -100px;">
+            <div class="feature-card">
+                <h6>Select card design</h6>
+                <div class="cards">
+                    <div class="card">
+                    <div class="card1">
+                        <img class="chip" src="./images/chip-yellow.png" alt="">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="card2">
+                        <img class="chip" src="./images/chip-yellow.png" alt="">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="card3">
+                        <img class="chip" src="./images/chip-yellow.png" alt="">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                    </div>
+                    </div>
+                </div>
+
+                <p>It is a long established fact that a reader will be distracted by the readable.</p>
+
+                <button class="continue-btn1" type="button">Continue</button>
+            </div>
+        </div>
+
+        <div class="just-screen">
+            <div class="select-bank">
+                <h6>Select your delivery option to bank</h6>
+                    <div class="link-account">
+                        <span>+</span>
+                        <p>Link new account</p>
+                    </div>
+    
+                    <div class="bank-wrap">
+                        <div class="bank">
+                            <div class="bank-logo">
+                                <img src="./images/citybank.png" alt="citybank">
+                            </div>
+                            <div class="bank-title">
+                                <p>City Bank</p>
+                                <span>Checking * 1234</span>
+                            </div>
+            
+                            <span class="free">Free</span>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="delivery">
+                            <p>Delivery time</p>
+                            <span>2-3 days<span>
+                        </div>
+                    </div>  
+                    <div class="bank-wrap" style="margin-top: 20px;">
+                        <div class="bank">
+                            <div class="bank-logo">
+                                <img src="./images/unicredit.jpeg" alt="unicredit">
+                            </div>
+                            <div class="bank-title">
+                                <p>UniCredit</p>
+                                <span>Checking * 5678</span>
+                            </div>
+            
+                            <span class="free">EUR 1.99</span>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="delivery">
+                            <p>Delivery time</p>
+                            <span>Immediately<span>
+                        </div>
+                    </div>  
+
+            </div>
+            <button class="continue-btn2" type="button">Continue</button>   
+        </div>
+
+
+        <div class="just-screen" style="margin-top: 100px;">
+            <div class="select-bank">
+                <h6>Select your delivery option to bank</h6>
+                <div class="link-account">
+                    <span>+</span>
+                    <p>Link new account</p>
+                </div>
+                    <div class="bank-wrap">
+                        <div class="bank">
+                            <div class="bank-logo">
+                                <img src="./images/citybank.png" alt="citybank">
+                            </div>
+                            <div class="bank-title">
+                                <p>City Bank</p>
+                                <span>Checking * 1234</span>
+                            </div>
+            
+                            <span class="free">Free</span>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="delivery">
+                            <p>Delivery time</p>
+                            <span>2-3 days<span>
+                        </div>
+                    </div>  
+                    <div class="bank-wrap" style="margin-top: 20px;">
+                        <div class="bank">
+                            <div class="bank-logo">
+                                <img src="./images/unicredit.jpeg" alt="unicredit">
+                            </div>
+                            <div class="bank-title">
+                                <p>UniCredit</p>
+                                <span>Checking * 5678</span>
+                            </div>
+            
+                            <span class="free">EUR 1.99</span>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="delivery">
+                            <p>Delivery time</p>
+                            <span>Immediately<span>
+                        </div>
+                    </div>  
+            </div>
+        
+            <div class="dark-mask">
+                <div class="tracking-info">
+                    <p>Add tracking information</p>
+                    <span>We will send you the link where you can track your card location at any point of time</span>
+                    <div class="separator"></div>
+                    <button class="add-tracking-btn" type="button">Add tracking</button>
+                </div>
+                <button class="not-now-btn" type="button">Not Now</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="middle">
+        <div class="ready-to-build">
+            <h1>Ready to build your next Finance App</h1>
+        </div>
+        <div class="wrap">
+            <div class="marvel-device iphone8-1">
+                <div class="top-bar"></div>
+                <div class="sleep"></div>
+                <div class="volume"></div>
+                <div class="camera"></div>
+                <div class="sensor"></div>
+                <div class="speaker"></div>
+                <div class="home"></div>
+                <div class="bottom-bar"></div>  
+                <div class="screen">
+                    <div class="feature-card1">
+                        <h6>My Platinum Card</h6>
+                            <div class="platinum-card">
+                                <img class="chip" src="./images/chip-yellow.png" alt="">
+                                <p class="card-name">TechGoals <span>02/24</span></p>
+                                <div class="circle1"></div>
+                                <div class="circle2"></div>
+                            </div>
+                    </div>
+                    <div class="card-services">
+                        <div class="lock">
+                            <img src="./images/lock.svg" alt="lock">
+                            <p>Lock Card</p>
+                        </div>
+                        <div class="security">
+                            <img src="./images/security.svg" alt="security">
+                            <p>Change PIN</p>
+                        </div>
+                        <div class="wallet">
+                            <img src="./images/wallet.svg" alt="wallet">
+                            <p>Top Up</p>
+                        </div>
+                    </div>
+
+                    <div class="card-settings">
+                        <h6>Settings</h6>
+                        <div class="card-limit-wrap">
+                            <div class="card-limit">
+                                <p>Set Card limit</p>
+                                <span>Set monthly spending amount</span>
+                            </div>
+                            <div class="move-btn"><span class="move-btn-inner"></span></div>
+                        </div>
+
+                        <div class="card-separator"></div>
+                       
+                        <div class="card-security-wrap">
+                            <div class="location-security">
+                                <p>Location based security</p>
+                                <span>Notification based on your location</span>
+                            </div>
+                            <div class="move-btn1"><span class="move-btn-inner1"></span></div>
+                        </div>
+                    </div>
+                        <!-- <button class="continue-btn1" type="button">Continue</button> -->
+                </div>
+            </div>                  
+
+            
+            <div class="marvel-device iphone8-2">
+                <div class="top-bar"></div>
+                <div class="sleep"></div>
+                <div class="volume"></div>
+                <div class="camera"></div>
+                <div class="sensor"></div>
+                <div class="speaker"></div>
+                <div class="home"></div>
+                <div class="bottom-bar"></div>  
+                <div class="screen">
+                    <div class="feature-account">
+                        <div class="account-wrap">
+                            <div class="available-balance">
+                                <h6>EUR 3,017</h6>
+                                <p>Available balance</p>
+                            </div>
+                            <div class="available-user">
+                                <img src="./images/user-icon.svg" alt="user-icon">
+                            </div>
+                            <div class="spent">
+                                <div class="red-dots"></div>
+                                <div class="spent-info">
+                                    <p>Spent</p>
+                                    <span class="spent-amount">EUR 1,017</span>
+                                </div>
+                            </div>
+                            <div class="earnet">
+                                <div class="blue-dots"></div>
+                                <div class="earned-info">
+                                    <p>Earned</p>
+                                    <span class="earned-amount">EUR 5,207</span>
+                                </div>
+                            </div>
+                            <div class="account-separator"></div>
+                        </div>
+                        <button class="tell-more-btn" type="button">Tell me more</button>
+                    </div>
+
+                    <div class="services-type">
+                        <div class="transfer">
+                            <img src="./images/send.svg" alt="lock">
+                            <p>Transfer</p>
+                        </div>
+                        <div class="my-card">
+                            <img src="./images/debit-card.svg" alt="security">
+                            <p>My Card</p>
+                        </div>
+                        <div class="pie-chart">
+                            <img src="./images/pie-chart.svg" alt="wallet">
+                            <p>Insight</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="line-chart-block block">
+                        <div class="line-chart">
+                          <div class="grafico">
+                          <ul class="eje-y">
+                            <li data-ejey="30"></li>
+                            <li data-ejey="20"></li>
+                            <li data-ejey="10"></li>
+                            <li data-ejey="0"></li>
+                          </ul>
+                          <ul class="eje-x">
+                            <li>Jan</li>
+                            <li>Feb</li>
+                            <li>Mar</li>
+                          </ul>
+                            <span data-valor="25">
+                            <span data-valor="8">
+                            <span data-valor="13">
+                            <span data-valor="5">   
+                            <span data-valor="23">   
+                            <span data-valor="12">
+                            <span data-valor="15">
+                             </span></span></span></span></span></span></span>
+                          </div>
+                          
+                        </div>
+                    </div> -->
+                 
+                    <!-- <div class="wrapper"></div> -->
+                    
+                    <div class="container">
+                        <div class="row">
+                          <select id="dataSelection">
+                            <option value="data_V1" selected="selected">Last 3 months</option>
+                            <option value="data_V2">Last Year</option> 
+                          </select>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-6" id="pieChart">
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="legend">
+                        <div><span class="lila"></span><span>Travel</span></div>
+                        <div><span class="green"></span><span>Shopping</span></div>
+                        <div><span class="blue"></span><span>Entertaiment</span></div>
+                        <div><span class="light-red"></span><span>Bills & Fees</span></div>
+                        <div><span class="dark-red"></span><span>Loans</span></div>
+                    </div>
+        
+        
+                </div>                  
+            </div> 
+
+        </div>
+    </section>
+
+
+    <section>
+        <div class="more-screens">
+            <h1>More screens</h1>
+        </div>
+        <div class="wrap">
+            <div class="just-screen">
+                <div class="bank-accounts1">
+                    <img class="left-arrow" src="./images/left-arrow-svgrepo-com.svg" alt="">
+                    <p class="my-account">My account</p>
+                        <div class="link-account1">
+                            <span>+</span>
+                            <p>Link new account</p>
+                        </div>
+
+                        <p class="bank-accounts-title">Bank account</p>
+                        <div class="bank-wrap">
+                            <div class="bank">
+                                <div class="bank-logo">
+                                    <img src="./images/citybank.png" alt="citybank">
+                                </div>
+                                <div class="bank-title">
+                                    <p>City Bank</p>
+                                    <span>Checking * 1234</span>
+                                </div>
+                
+                                <img class="three-dots" src="./images/three_dots.svg" alt="dots">
+                            </div>
+                            <div class="separator"></div>
+                            <div class="delivery">
+                                <p>Available balance</p>
+                                <span>EUR 1,702<span>
+                            </div>
+                        </div>  
+                        <div class="bank-wrap" style="margin-top: 20px;">
+                            <div class="bank">
+                                <div class="bank-logo">
+                                    <img src="./images/unicredit.jpeg" alt="unicredit">
+                                </div>
+                                <div class="bank-title">
+                                    <p>UniCredit</p>
+                                    <span>Saving * 5678</span>
+                                </div>
+                                <img class="three-dots" src="./images/three_dots.svg" alt="dots">
+
+                            </div>
+                            <div class="separator"></div>
+                            <div class="delivery">
+                                <p>Available balance</p>
+                                <span>EUR 2,017.82<span>
+                            </div>
+                        </div>  
+                        <p class="bank-accounts-title1">Cards</p>
+                        <div class="bank-wrap">
+                            <div class="bank">
+                                <div class="bank-logo">
+                                    <img  class="visa-card" src="./images/visa.png" alt="citybank">
+                                </div>
+                                <div class="bank-title">
+                                    <p>Visa Card</p>
+                                    <span>Visa * 1702</span>
+                                </div>
+                
+                                <img class="three-dots1" src="./images/three_dots.svg" alt="dots">
+                            </div>
+                            <div class="separator"></div>
+                            <div class="delivery">
+                                <p>Available balance</p>
+                                <span>EUR 702<span>
+                            </div>
+                        </div> 
+    
+                </div> 
+            </div>
+
+
+
+            <div class="just-screen" style="margin-top: -100px;">
+                <div class="feature-account1">
+                    <p class="transf-title">Transfer</p>
+
+                    <div class="transfer-settings">
+                        <div class="mobile-wrap">
+                            <div class="mobile">
+                                <img src="./images/user-icon.svg" alt="">
+                            </div>
+                            <p>Mobile</p>
+                        </div>
+
+                        <div class="bank-transfer-wrap">
+                            <div class="bank-transfer">
+                                <img src="./images/money-svgrepo-com.svg" alt="">
+                            </div>
+                            <p>Bank</p>
+                        </div>
+
+                        <!-- <div class="nearby-wrap">
+                            <div class="nearby">
+                                <img src="./images/nearby-svgrepo-com.svg" alt="">
+                            </div>
+                            <p>Nearby</p>
+                        </div> -->
+
+                        <div class="qr-code-wrap">
+                            <div class="qr-code">
+                                <img src="./images/qr-code-icon.svg" alt="">
+                            </div>
+                            <p>QR Code</p>
+                        </div>
+                    </div>
+
+                    <div class="mobile-users">
+                        <p class="resent">Recent</p>
+                        <div class="user">
+                            <img src="./images/user1.jpeg" alt="">
+                            <p class="username">Monica</p>
+                            <p class="userphone">+123456789</p>
+                        </div>
+                        <div class="user">
+                            <img src="./images/user2.jpeg" alt="">
+                            <p class="username">Philip</p>
+                            <p class="userphone">+987654321</p>
+                        </div>
+                        <div class="user">
+                            <img src="./images/user3.jpeg" alt="">
+                            <p class="username">Mary</p>
+                            <p class="userphone">+543216789</p>
+                        </div>
+                    </div>
+
+                    <div class="all-contacts">
+                        <p class="resent">All contacts</p>
+                        <input class="search" type="text" id="name_phone" name="NamePhone" placeholder="search name or number">
+
+                        <div class="contacts-result">
+                            <div class="user-wrap">
+                                <img src="./images/user1.jpeg" alt="">
+                                <div class="user-result">
+                                    <p class="username">Paula</p>
+                                    <p class="userphone">+157893486</p>
+                                </div>
+                                <div class="invite">
+                                    <p>invite</p>
+                                </div>
+                            </div>
+                            <div class="contacts-separator"></div>
+                            <div class="user-wrap">
+                                <img src="./images/user2.jpeg" alt="">
+                                <div class="user-result">
+                                    <p class="username">Stefan</p>
+                                    <p class="userphone">+145678908</p>
+                                </div>
+                                <div class="invite">
+                                    <p>invite</p>
+                                </div>
+                            </div>
+                            <div class="contacts-separator"></div>
+                            <div class="user-wrap">
+                                <img src="./images/user3.jpeg" alt="">
+                                <div class="user-result">
+                                    <p class="username">Mary</p>
+                                    <p class="userphone">+876456129</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="just-screen">
+                <div class="mobile-payment">
+                    <div class="arrow-title">
+                        <img class="left-arrow" src="./images/left-arrow-svgrepo-com.svg" alt="">
+                        <p class="enter-amount">Enter Amount</p>
+                    </div>
+
+                    <div class="mobiletransf-amount">
+                        <h3>EUR 17</h3>
+                    </div>
+
+                    <div class="user-wrap-mobile">
+                        <img src="./images/user1.jpeg" alt="">
+                        <div class="user-result-mobile">
+                            <p class="userphone">Recipient</p>
+                            <p class="username">Paula</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="enter-amount-num">
+                        <div class="number">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                        </div>
+                        <div class="number">
+                            <span>4</span>
+                            <span>5</span>
+                            <span>6</span>
+                        </div>
+                        <div class="number">
+                            <span>7</span>
+                            <span>8</span>
+                            <span>9</span>
+                        </div>
+                        <div class="number">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="continue-btn3" type="button">Continue</button>
+            </div>
+
+
+        </div> 
+    </section>
+
+    <section>
+        <div class="wrap">
+            <div class="just-screen slideShow screen-fingerprint fade">
+                <div class="ripple1">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="OBJECTS" viewBox="0 0 103.051 102">
+                        <defs>
+                            <pattern id="gif" height="100%" width="100%" patternContentUnits="objectBoundingBox">
+                             <image height="1" width="1" preserveAspectRatio="none" xlink:href="https://media.giphy.com/media/dAWZiSMbMvObDWP3aA/giphy.gif"></image>
+                         </pattern>
+                       </defs>
+                       <g class="prints" stroke="#fff">
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M13.1 52.786s4.367-1.106 4.725-10.829 4.841-22.651 9.107-25.389" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M28.984 14.686S40.423-.54 66.58 4.026" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M75.173 11.689a43.984 43.984 0 00-19.836-3.077c-9.059.522-17.207 3.674-24.463 12.261-8.447 9.995-8.456 22.215-7.789 31.5.457 6.372-7.166 9.01-9.363 9.326" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M82.387 84.332a4.85 4.85 0 01-1.987-3.344c-.423-2.428 1.032-9.714 2.486-13.691s3.346-12.64 3.427-16.456a32.465 32.465 0 00-.624-6.964" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M75.383 18.957S86.59 26.26 88.491 39" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M72.031 17s-19.474-9.522-35.118 4.62" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M34.832 24.532s-2.749 3.991-2.5 4.091" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M30.531 32.956s-2.172 9.127-2.224 13.506a87 87 0 01-.422 10.347c-.352 1.971-2.323 7.827-11.826 11.129" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M16.845 74.418s6.676-3.673 8.717-5.643" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M30.531 62.637a10.878 10.878 0 003.454-6.445c.751-4.334-.281-8.932 0-12.217s1.231-15.111 11.08-20.836 21.055-3.191 25.636 0 10.717 8.937 11.236 18.045a58 58 0 01-2.214 17.947" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M19.692 81.044s12.7-9.13 16.077-15.873 4.692-9.9 4.223-14.33-.351-12.689 2.722-17.885a17.446 17.446 0 0110.815-7.673" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M58.243 24.847a11.342 11.342 0 015.484.855" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M67.241 27.317s6.887 3.331 7.932 10.463 1.046 13.234-.643 18.02-6.224 20.672-7.289 23.851S63.976 97.159 68.83 99.1" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M78.178 65.209s-4.211 14.242-4.68 18.56-1.06 7.231 1.675 9.854" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M60.167 102.915s-2.767-3.358-2.884-10.887a31.772 31.772 0 013.732-14.923c.845-1.689 6.57-15.079 7.884-20.913s1.838-14.646.45-19.2-5.143-7-12.182-6.34S48.392 34.4 47.148 37.5s.165 9.87-.492 15.955S43 68.1 34.832 75.885 22.953 86.63 22.953 86.63" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M26.36 91.114s9.2-8.1 14.1-12.883 11.32-15.674 11.949-22.337-.887-11.87.117-14.71 3.046-5.468 6.049-5 5.529 1.5 5.768 7.977-3.516 17.926-3.516 17.926c-1.22 2.441-9.722 22.525-10.164 26.373" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M51.884 104.791s-2.1-6.2-1.974-9.762" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M40.274 100.944a20.083 20.083 0 010-8.916c1.1-4.97 4.412-8.916 6.335-11.638s7.537-10.418 9.658-19.522" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M58.34 43.109s.524 7.441-.891 13.068" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       </g>
+                       <g class="draw" stroke="url(#gif)">
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M13.1 52.786s4.367-1.106 4.725-10.829 4.841-22.651 9.107-25.389" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M28.984 14.686S40.423-.54 66.58 4.026" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M75.173 11.689a43.984 43.984 0 00-19.836-3.077c-9.059.522-17.207 3.674-24.463 12.261-8.447 9.995-8.456 22.215-7.789 31.5.457 6.372-7.166 9.01-9.363 9.326" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M82.387 84.332a4.85 4.85 0 01-1.987-3.344c-.423-2.428 1.032-9.714 2.486-13.691s3.346-12.64 3.427-16.456a32.465 32.465 0 00-.624-6.964" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M75.383 18.957S86.59 26.26 88.491 39" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M72.031 17s-19.474-9.522-35.118 4.62" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M34.832 24.532s-2.749 3.991-2.5 4.091" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M30.531 32.956s-2.172 9.127-2.224 13.506a87 87 0 01-.422 10.347c-.352 1.971-2.323 7.827-11.826 11.129" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M16.845 74.418s6.676-3.673 8.717-5.643" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M30.531 62.637a10.878 10.878 0 003.454-6.445c.751-4.334-.281-8.932 0-12.217s1.231-15.111 11.08-20.836 21.055-3.191 25.636 0 10.717 8.937 11.236 18.045a58 58 0 01-2.214 17.947" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M19.692 81.044s12.7-9.13 16.077-15.873 4.692-9.9 4.223-14.33-.351-12.689 2.722-17.885a17.446 17.446 0 0110.815-7.673" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M58.243 24.847a11.342 11.342 0 015.484.855" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M67.241 27.317s6.887 3.331 7.932 10.463 1.046 13.234-.643 18.02-6.224 20.672-7.289 23.851S63.976 97.159 68.83 99.1" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M78.178 65.209s-4.211 14.242-4.68 18.56-1.06 7.231 1.675 9.854" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M60.167 102.915s-2.767-3.358-2.884-10.887a31.772 31.772 0 013.732-14.923c.845-1.689 6.57-15.079 7.884-20.913s1.838-14.646.45-19.2-5.143-7-12.182-6.34S48.392 34.4 47.148 37.5s.165 9.87-.492 15.955S43 68.1 34.832 75.885 22.953 86.63 22.953 86.63" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M26.36 91.114s9.2-8.1 14.1-12.883 11.32-15.674 11.949-22.337-.887-11.87.117-14.71 3.046-5.468 6.049-5 5.529 1.5 5.768 7.977-3.516 17.926-3.516 17.926c-1.22 2.441-9.722 22.525-10.164 26.373" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M51.884 104.791s-2.1-6.2-1.974-9.762" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M40.274 100.944a20.083 20.083 0 010-8.916c1.1-4.97 4.412-8.916 6.335-11.638s7.537-10.418 9.658-19.522" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M58.34 43.109s.524 7.441-.891 13.068" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                       </g>
+                     </svg>
+                </div>
+        
+                <div class="ripple2"></div>
+
+                <div class="use-touch-id">
+                    <h6>Use Touch ID to authorise payments</h6>
+                    <p>Activate Touch ID so you don't need to confirm your PIN every time you want to send money</p>
+
+                </div>
+
+                <button class="continue-btn4" type="button">Activate Now</button>
+                <span class="skip1">Skip this step -></span>
+            </div>
+
+            <div class="just-screen" style="background: rgba(158, 183, 255, 0.3); margin-top: -100px;">
+                <div class="payment-wrap">
+                   <img src="./images/check.svg" alt="">
+                   <p class="sucessfully-paid">You Sucessfully send money to</p>
+                   <div class="user-wrap-mobile1">
+                        <img src="./images/user1.jpeg" alt="">
+                        <div class="user-result-mobile1">
+                            <p class="userphone">Recipient</p>
+                            <p class="username">Paula</p>
+                            
+                        </div>
+                    </div>
+                    <div class="reference-number">
+                        <p>Reference number</p>
+                        <span>12ABC170282</span>
+                    </div>
+                    <div class="sent-infos-wrap">
+                        <div class="amount-sent">
+                            <p>Amount sent</p>
+                            <span>EUR 17</span>
+                        </div>
+                        <div class="transfer-fee">
+                            <p>Transfer fee</p>
+                            <span>EUR 0.00</span>
+                        </div>
+                    </div>
+                    <button class="continue-btn5" type="button">Done</button>
+                </div>
+                
+            </div>
+
+            <div class="just-screen">
+                <div class="qr-payment-wrap">
+                    <div class="qr-payment-title">
+                        <img src="./images/left-arrow-svgrepo-com.svg" alt="">
+                        <p class="qr-code1">QR Code</p>
+                    </div>
+                   
+                   <img class="qr-code-payment-icon" src="./images/qr-code.svg" alt="">
+                   <p class="qr-number">[ 0 1 7 - 0 2 0 ]</p>
+                   <div class="qr-payment-tips">
+                        <img src="./images/tips.svg" alt="">
+                        <div class="qr-payment-tips-txt">
+                            <p class="">Simply show the QR code or Number and you can send or reseve money</p>                            
+                        </div>
+                    </div>
+                   
+                    <button class="continue-btn6" type="button">Got It</button>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+
+    <section>
+       <div class="wrap">
+        <div class="just-screen" style="margin-top: 0px; margin-left: 70px;">
+            <div class="feature-account1">
+                <p class="transf-title">Transfer</p>
+
+                <div class="transfer-settings">
+                    <div class="mobile-wrap">
+                        <div class="mobile1">
+                            <img src="./images/user-icon.svg" alt="">
+                        </div>
+                        <p>Mobile</p>
+                    </div>
+
+                    <div class="bank-transfer-wrap">
+                        <div class="bank-transfer1">
+                            <img src="./images/money-svgrepo-com.svg" alt="">
+                        </div>
+                        <p>Bank</p>
+                    </div>
+
+                    <!-- <div class="nearby-wrap">
+                        <div class="nearby">
+                            <img src="./images/nearby-svgrepo-com.svg" alt="">
+                        </div>
+                        <p>Nearby</p>
+                    </div> -->
+
+                    <div class="qr-code-wrap">
+                        <div class="qr-code">
+                            <img src="./images/qr-code-icon.svg" alt="">
+                        </div>
+                        <p>QR Code</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bank-accounts">
+                <p class="payee-list">Payee list</p>
+    
+                    <p class="bank-accounts-title">Bank account</p>
+                        <div class="bank-wrap">
+                            <div class="bank">
+                                <div class="bank-logo">
+                                    <img src="./images/citybank.png" alt="citybank">
+                                </div>
+                                <div class="bank-title">
+                                    <p>City Bank</p>
+                                        <span>Checking * 1234</span>
+                                </div>
+                                <img class="arrow-right" src="./images/left-arrow-svgrepo-com.svg" alt="dots">
+                            </div>
+                        </div>  
+                            <div class="bank-wrap" style="margin-top: 20px;">
+                                <div class="bank">
+                                    <div class="bank-logo">
+                                        <img src="./images/unicredit.jpeg" alt="unicredit">
+                                    </div>
+                                    <div class="bank-title">
+                                        <p>UniCredit</p>
+                                        <span>Saving * 5678</span>
+                                    </div>
+                                    <img class="arrow-right" src="./images/left-arrow-svgrepo-com.svg" alt="dots">
+                                </div>
+                            </div>  
+                            <div class="bank-wrap" style="margin-top: 20px;">
+                                <div class="bank">
+                                    <div class="bank-logo">
+                                        <img src="./images/unicredit.jpeg" alt="unicredit">
+                                    </div>
+                                    <div class="bank-title">
+                                        <p>UniCredit</p>
+                                        <span>Checking * 9874</span>
+                                    </div>
+                                    <img class="arrow-right" src="./images/left-arrow-svgrepo-com.svg" alt="dots">
+                                </div>
+                            </div> 
+                    </div>      
+            </div>
+
+            <div class="just-screen" style="margin-top: -100px; margin-left: 70px;">
+                <div class="feature-account2">
+                    <div class="arrow-title">
+                        <img class="left-arrow" src="./images/left-arrow-svgrepo-com_white.svg" alt="">
+                        <p class="my-saving">My Saving</p>
+                    </div>
+                    <div class="balance">
+                        <p>Balance</p>
+                        <p>EUR 2,017.82</p>
+                    </div>
+                    <div class="account-details">
+                        <p>Account details 1234-017-5678</p>
+                    </div>
+                    <div class="interest">
+                        <div class="interest-rate">
+                            <p>Interest Rate</p>
+                            <p>1.5%</p>
+                        </div>
+                        <div class="your-interest">
+                            <p>Your interest</p>
+                            <p>EUR 150.00</p>
+                        </div>
+                    </div>
+                    <div class="saving-menu">
+                        <div class="add-fund">
+                            <img src="./images/add-money.svg" alt="">
+                            <p>Add Fund</p>
+                        </div>
+                        <div class="withdraw">
+                            <img src="./images/withdraw.svg" alt="">
+                            <p>Withdraw</p>
+                        </div>
+                        <div class="statements">
+                            <img src="./images/statements.svg" alt="">
+                            <p>Statements</p>
+                        </div>
+                    </div>
+                    <div class="goal">
+                        <p class="my-goal">My Goals</p>
+                        <span>Maldives trip</span>
+                        <img src="./images/maldives.jpeg" alt="">
+                        <p class="lets-save">Let's save to achive your goal</p>
+                        <button class="create-periodic-tranf-btn" type="button">Create Periodic Transfer</button>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="periodic-transfer">
+                <p>Periodic Transfer</p>
+                <div class="period-wrap">
+                    <div class="period-info">
+                        <span>Period</span>
+                        <p>Every month</p>
+                    </div>
+                    <div class="amount-info">
+                        <span>Amount</span>
+                        <p>EUR 100.00</p>
+                    </div>
+                </div>
+                <div class="bank-info-wrap">
+                    <div class="bank-info">
+                        <img src="./images/unicredit.jpeg" alt="">
+                        <p>UniCredit</p>
+                    </div>
+                    <div class="account-info">
+                        <p>4321-456-9874</p>
+                        <span>Selda</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="just-screen" style="margin-left: -230px;">
+                <div class="feature-account2">
+                    <div class="loan-tip-title">
+                        <img src="./images/left-arrow-svgrepo-com_white.svg" alt="">
+                        <p class="qr-code1">Advice</p>
+                    </div>
+                    <div class="loan-tip-wrap">
+                    <img class="loan-tip-img" src="./images/tips.svg" alt="">
+                    <p>Your interest rate of the loan is 3.5%. Do you want to check what other banks offer?</p>
+                    <button class="continue-btn7" type="button">Check offers</button>
+                    </div>
+                    <p class="meet-acc-manager">Meet your Account Manager</p>
+
+                    <div class="account-manager-wrap">
+                        <img src="./images/user-2.png" alt="">
+                        <p>Hi, I am Brian, your personal finance manager. How can I help you?</p>
+                    </div>
+                    <button class="continue-btn8" type="button">Contact me</button>
+                </div>
+                
+            </div>
+
+        </div>  
+    </section>
+
+    <section>
+        <div class="wrap">
+            <div class="html-css-javascript-react">
+                <img src="./images/HTML-CSS-Javascript-and-React.JS-1-1024x294.jpg" alt="">
+            </div>
+        </div>
+    </section>
+  
+
+
+
+<script src="autoSlide.js" type="text/javascript"></script>
+<script src="carousel.js" type="text/javascript"></script>
+
+<script>
+    
+var data_V1 = [{
+  "Type": "A",
+  "Amount": 250,
+  "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum metus vel odio convallis condimentum. Integer ullamcorper ipsum vel dui varius congue. Nulla facilisi. Morbi molestie tortor libero, ac placerat urna mollis ac. Vestibulum id ipsum mauris."
+}, {
+  "Type": "B",
+  "Amount": 1000,
+  "Description": "In hac habitasse platea dictumst. Curabitur lacus neque, congue ac quam a, sagittis accumsan mauris. Suspendisse et nisl eros. Fusce nulla mi, tincidunt non faucibus vitae, aliquam vel dolor. Maecenas imperdiet, elit eget condimentum fermentum, sem lorem fringilla felis, vitae cursus lorem elit in risus."
+}, {
+  "Type": "C",
+  "Amount": 600,
+  "Description": "Aenean faucibus, risus sed eleifend rutrum, leo diam porttitor mauris, a eleifend ipsum ipsum ac ex. Nam scelerisque feugiat augue ac porta. Morbi massa ante, interdum sed nulla nec, finibus cursus augue. Phasellus nunc neque, blandit a nunc ut, mattis elementum arcu."
+}, {
+  "Type": "D",
+  "Amount": 1750,
+  "Description": "Aenean tellus felis, finibus eget placerat nec, ultrices vel elit. Morbi viverra mi ac ornare euismod. Quisque ultrices id nibh aliquam bibendum. Morbi id tortor non magna dictum suscipit. Nunc dolor metus, aliquam vitae felis id, euismod vulputate metus."
+}];
+
+var data_V2 = [{
+  "Type": "E",
+  "Amount": 600,
+  "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum metus vel odio convallis condimentum. Integer ullamcorper ipsum vel dui varius congue. Nulla facilisi. Morbi molestie tortor libero, ac placerat urna mollis ac. Vestibulum id ipsum mauris."
+}, {
+  "Type": "F",
+  "Amount": 2000,
+  "Description": "In hac habitasse platea dictumst. Curabitur lacus neque, congue ac quam a, sagittis accumsan mauris. Suspendisse et nisl eros. Fusce nulla mi, tincidunt non faucibus vitae, aliquam vel dolor. Maecenas imperdiet, elit eget condimentum fermentum, sem lorem fringilla felis, vitae cursus lorem elit in risus."
+}, {
+  "Type": "G",
+  "Amount": 1500,
+  "Description": "Aenean faucibus, risus sed eleifend rutrum, leo diam porttitor mauris, a eleifend ipsum ipsum ac ex. Nam scelerisque feugiat augue ac porta. Morbi massa ante, interdum sed nulla nec, finibus cursus augue. Phasellus nunc neque, blandit a nunc ut, mattis elementum arcu."
+}, {
+  "Type": "H",
+  "Amount": 900,
+  "Description": "Aenean faucibus, risus sed eleifend rutrum, leo diam porttitor mauris, a eleifend ipsum ipsum ac ex. Nam scelerisque feugiat augue ac porta. Morbi massa ante, interdum sed nulla nec, finibus cursus augue. Phasellus nunc neque, blandit a nunc ut, mattis elementum arcu."
+}, {
+  "Type": "I",
+  "Amount": 1100,
+  "Description": "Aenean faucibus, risus sed eleifend rutrum, leo diam porttitor mauris, a eleifend ipsum ipsum ac ex. Nam scelerisque feugiat augue ac porta. Morbi massa ante, interdum sed nulla nec, finibus cursus augue. Phasellus nunc neque, blandit a nunc ut, mattis elementum arcu."
+}];
+
+data = [{
+  "key": "data_V1",
+  "values": data_V1
+}, {
+  "key": "data_V2",
+  "values": data_V2
+}]
+
+var width = parseInt(d3.select('#pieChart').style('width'), 10);
+var height = width;
+var radius = (Math.min(width, height) - 100) / 2;
+
+var type = function getObject(obj) {
+  types = [];
+  for (var i = 0; i < obj.length; i++) {
+    types.push(obj[i].Type);
+  }
+  return types
+};
+
+var pie = d3.layout.pie()
+  .value(function(d) {
+    return d.Amount;
+  })
+  .sort(null);
+
+var arc = d3.svg.arc()
+  .outerRadius(radius - 20)
+  .innerRadius(130);
+
+var arcOver = d3.svg.arc()
+  .outerRadius(radius + 20)
+  .innerRadius(130);
+
+var svg = d3.select("#pieChart").append("svg")
+  .attr("width", '50%')
+  .attr("height", '50%')
+  .attr('viewBox', '0 0 ' + Math.min(width, height) + ' ' + Math.min(width, height))
+  .attr('preserveAspectRatio', 'xMinYMin')
+  .append("g")
+  .attr("transform", "translate(" + radius * 1.5 + "," + height / 2 + ")");
+
+var path = svg.selectAll("path");
+
+var label = d3.select("#dataSelection")
+  .data(data)
+  .on("change", changeData)
+  .filter(function(d, i) {
+  console.log(!i)
+    return !i;
+  })
+  .each(changeData)
+
+changeText = function(text, textID) {
+  d3.select(textID)
+    .text(text)
+};
+
+change = function(d, i) {
+  var angle = 90 - ((d.startAngle * (180 / Math.PI)) + ((d.endAngle - d.startAngle) * (180 / Math.PI) / 2))
+  svg.transition()
+    .duration(1000)
+    .attr("transform", "translate(" + radius + "," + height / 2 + ") rotate(" + angle + ")")
+  d3.selectAll("path")
+    .transition()
+    .attr("d", arc)
+  d3.select(i)
+    .transition()
+    .duration(1000)
+    .attr("d", arcOver)
+};
+
+function changeData() {
+  var selectedData = data[this.selectedIndex]
+  var color = d3.scale.ordinal()
+  .domain(type(selectedData.values))
+  .range(["rgba(121, 102, 255, 0.8)", "rgba(158, 183, 255, 0.8)", "#8EA65B", "rgba(250, 64, 80, 0.8)", "#BF4539"]);
+  
+  var data1 = pie(selectedData.values);
+  var dataText = [selectedData.key];
+
+  path = path.data(data1)
+
+  path.enter().append("path")
+    .each(function(d) {
+      this._current = {
+        startAngle: d.endAngle,
+        endAngle: d.endAngle
+      };
+    })
+    .attr("fill", function(d) {
+      return color(d.data.Type);
+    })
+    .on("click", function(d) {
+      var titleText = d.data.Type + ": " + d.data.Amount;
+      var blockText = d.data.Description;
+
+      changeText(titleText, "#segmentTitle");
+      changeText(blockText, "#segmentText");
+      change(d, this);
+    });
+  path.exit()
+    .datum(function(d, i) {
+      return {
+        startAngle: d.endAngle,
+        endAngle: d.endAngle
+      };
+    })
+    .transition()
+    .duration(750)
+    .attrTween("d", arcTween)
+    .remove();
+  path.transition()
+    .duration(750)
+    .attrTween("d", arcTween);
+
+  $('.text-container').hide();
+  $('#segmentTitle').replaceWith('<h1 id="segmentTitle">Select Segment</h1>');
+  $('#')
+  $('#segmentText').replaceWith('<p id="segmentText">Lots of text...</p>');
+  $('.text-container').fadeIn(400);
+
+};
+
+function key(d) {
+  return d.data.Type;
+}
+
+function arcTween(d) {
+  var i = d3.interpolate(this._current, d);
+  this._current = i(0);
+  return function(t) {
+    return arc(i(t));
+  };
+}
+
+document.querySelector('style').textContent += '@media(max-width:767px) {#pieChart { transform: rotate(90deg); transform-origin: 50% 50%; transition: 1s; max-width: 50%; } .text-container { width: 100%; min-height: 0; }} @media(min-width:768px) {#pieChart { transition: 1s;}}'
+</script>
+
+</body>
+
+
+</html>
+
+
